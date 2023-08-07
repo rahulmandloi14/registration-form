@@ -1,0 +1,63 @@
+body {
+ background-color: #0563b4;
+}
+.container{
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+  /* max-width: 500px; */
+  width: 100%;
+  margin: auto;
+}
+.container > form {
+  width: 70%;
+  border: 1px solid #dfdfdf;
+  padding: 20px;
+  border-radius: 5px;
+  background: #fff;
+}
+pre {
+  width: 70%;
+  color: black;
+  font-size: larger;
+}
+button{
+  background: #0563b4 !important;
+  color: #fff;
+}
+p {
+  color: red;
+}
+
+/* Style for the entire table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  /* Add any additional styles you want for the table here */
+}
+
+/* Style for table headers (th) */
+th {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+ 
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+tr{
+  background: white;
+}
