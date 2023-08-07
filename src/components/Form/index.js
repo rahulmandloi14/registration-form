@@ -40,7 +40,7 @@ const RegistrationForm = () => {
       setFormError(validate(userData));
       setIsSubmit(true);
       storeData()
-      
+      update(initialValues)
       const newUser = {
         ...userData, dateOfBirth : `${("0"+new Date(userData.dateOfBirth).getDate()).slice(-2)}-${("0" + (new Date(userData.dateOfBirth).getMonth() + 1)).slice(-2)}-${new Date(userData.dateOfBirth).getFullYear()}`
       };
@@ -48,7 +48,7 @@ const RegistrationForm = () => {
       dispatch(addUser(newUser));
       if(Object.keys(formError).length === 0 && isSubmit){
          alert("Form successfully submitted")
-         update(initialValues)
+        
       }
   };
   const validate = (values) => {
